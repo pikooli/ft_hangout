@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/VviewId"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/Vicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:onClick="pickPhoto"
+        android:src="@mipmap/ic_launcher_round"
+        ></ImageButton>
+    <TextView
+        android:id="@+id/Vname"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:onClick="editContact"
+        android:clickable="true"
+        android:layout_height="wrap_content"></TextView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/Vsms"
+        android:layout_toLeftOf="@+id/Vcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sms"
+        android:text="Sms"></Button>
+    <Button
+        android:id="@+id/Vcall"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="call"
+        android:text="Call"></Button>
+    </RelativeLayout>
+</LinearLayout>

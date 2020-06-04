@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Control.AddContactActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Control.AddContactActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Add Contact"
+        android:textSize="30sp"
+        ></TextView>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/firstNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="First name :"></TextView>
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstNameText"
+            android:singleLine="true"
+            android:hint="Type the first name "></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/SecondNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Second name :"></TextView>
+        <EditText
+            android:id="@+id/SecondName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SecondNameText"
+            android:singleLine="true"
+            android:hint="Type the second name "></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ResidenceText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Residence :"></TextView>
+        <EditText
+            android:id="@+id/Residence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ResidenceText"
+            android:singleLine="true"
+            android:hint="Residence place"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/NumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Phone :"></TextView>
+        <EditText
+            android:id="@+id/Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NumberText"
+            android:singleLine="true"
+            android:hint="Phone number"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/EmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Email:"></TextView>
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EmailText"
+            android:singleLine="true"
+            android:hint="Email place "></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/NoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Note:"></TextView>
+        <EditText
+            android:id="@+id/Note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NoteText"
+            android:singleLine="true"
+            android:hint="Note"></EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        android:onClick="save"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="delete"
+            android:onClick="delete"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Cancel"
+        android:onClick="cancel"></Button>
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
