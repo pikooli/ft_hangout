@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ft_hangout</string>
+    <string name="greeting">Bienvenue sur ft_hangout</string>
+    <string name="add">Ajouter</string>
+    <string name="option">Option</string>
+
+    <string name="color_red">Rouge</string>
+    <string name="color_blue">Bleu</string>
+    <string name="color_purple">Violet</string>
+    <string name="color_white">Blanc</string>
+
+    <string name="add_contact">Ajouter un contact</string>
+    <string name="edit_contact">Editer un contact</string>
+
+    <string name="firstName">Prenom</string>
+    <string name="type_firstName">Entrer le prenom</string>
+    <string name="secondName">Nom</string>
+    <string name="type_secondName">Entrer le nom</string>
+    <string name="residence">Adresse</string>
+    <string name="type_residence">l\'adresse</string>
+    <string name="phone">Telephone</string>
+    <string name="type_phone">Numero de telephone</string>
+    <string name="email">Email</string>
+    <string name="type_email">L\'email</string>
+    <string name="note">Note</string>
+    <string name="type_note">Note</string>
+
+    <string name="save">Enregistrer</string>
+    <string name="delete">Suprimer</string>
+    <string name="cancel">Annuler</string>
+
+    <string name="error">Pas de prenom</string>
+    <string name="errorNumber">Pas de numero renseigner</string>
+
+</resources>

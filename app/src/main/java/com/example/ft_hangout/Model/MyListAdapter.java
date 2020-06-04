@@ -17,13 +17,15 @@ import com.example.ft_hangout.R;
 public class MyListAdapter extends ArrayAdapter<String> {
     private final Activity context;
     private final String[] mName;
+    private final String[] mNumber;
     private final int[] mId;
 
-    public MyListAdapter(Activity context, String[] name, int[] id){
+    public MyListAdapter(Activity context, String[] name, String[] number, int[] id){
         super(context, R.layout.mylist, name);
                 this.context = context;
                 this.mName = name;
                 this.mId = id;
+                this.mNumber = number;
     }
 
     public View getView(int position , View view , ViewGroup parent){
@@ -35,8 +37,8 @@ public class MyListAdapter extends ArrayAdapter<String> {
         final ImageButton image = (ImageButton) rowView.findViewById(R.id.Vicon);
         name.setTag("" + mId[position]);
         image.setTag("" + mId[position]);
-        call.setTag("" + mId[position]);
-        sms.setTag("" + mId[position]);
+        call.setTag(mNumber[position]);
+        sms.setTag(mNumber[position]);
 
         if (mName[position].length() > 20)
             name.setText(mName[position].substring(0,7) + "...");

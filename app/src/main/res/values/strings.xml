@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">ft_hangout</string>
+    <string name="app_name">Ft_hangout</string>
+    <string name="greeting">Welcome to ft_hangout</string>
+    <string name="add">Add</string>
+    <string name="option">Option</string>
+
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_white">White</string>
+
+    <string name="add_contact">Add contact</string>
+    <string name="edit_contact">Edit contact</string>
+
+    <string name="firstName">Firstname</string>
+    <string name="type_firstName">Type the firstname</string>
+    <string name="secondName">Secondname</string>
+    <string name="type_secondName">Type the secondname</string>
+    <string name="residence">Residence</string>
+    <string name="type_residence">Residence place</string>
+    <string name="phone">Phone</string>
+    <string name="type_phone">Phone place</string>
+    <string name="email">Email</string>
+    <string name="type_email">Email place</string>
+    <string name="note">Note</string>
+    <string name="type_note">Note</string>
+
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">No firstname input</string>
+    <string name="errorNumber">No number register</string>
 </resources>

@@ -14,20 +14,20 @@
             android:gravity="center"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="Hello to ft_hangout" />
+            android:text="@string/greeting" />
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Contact"
+            android:text="@string/add"
             android:onClick="AddContact"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="Option"
+            android:text="@string/option"
             android:onClick="Option"/>
     </RelativeLayout>
     <ListView

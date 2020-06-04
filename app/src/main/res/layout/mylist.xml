@@ -23,18 +23,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     <Button
-        android:id="@+id/Vsms"
-        android:layout_toLeftOf="@+id/Vcall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="sms"
-        android:text="Sms"></Button>
-    <Button
         android:id="@+id/Vcall"
-        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/Vsms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="call"
         android:text="Call"></Button>
+    <Button
+        android:id="@+id/Vsms"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sms"
+        android:text="Sms"></Button>
     </RelativeLayout>
 </LinearLayout>

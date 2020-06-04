@@ -2,7 +2,9 @@ package com.example.ft_hangout.Control;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +15,9 @@ import android.widget.Toast;
 import com.example.ft_hangout.Model.Contact;
 import com.example.ft_hangout.Model.ContactDatasource;
 import com.example.ft_hangout.R;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class AddContactActivity extends AppCompatActivity {
     private ContactDatasource datasource;
@@ -25,6 +30,11 @@ public class AddContactActivity extends AppCompatActivity {
     private  EditText note;
     private  String id;
     private Contact contact;
+    private View header;
+    private Date currentTime = null;
+    private SharedPreferences mPreferences;
+    private String MYPREFERENCE = "hangout";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +48,10 @@ public class AddContactActivity extends AppCompatActivity {
         number = (EditText) findViewById(R.id.Number);
         email = (EditText) findViewById(R.id.Email);
         note = (EditText) findViewById(R.id.Note);
+        header = (TextView) findViewById(R.id.title);
         datasource = new ContactDatasource(this);
+        mPreferences = getSharedPreferences(MYPREFERENCE, Context.MODE_PRIVATE);
+        header.setBackgroundResource(mPreferences.getInt("color", R.color.white));
 
         getIntent();
         id = getIntent().getStringExtra("id");
@@ -47,7 +60,7 @@ public class AddContactActivity extends AppCompatActivity {
     }
     public void edit()
     {
-        title.setText("Edit contact");
+        title.setText(R.string.edit_contact);
         contact = datasource.getContact(id);
         firstName.setText(contact.getFirstName());
         secondName.setText(contact.getSecondName());
@@ -60,9 +73,10 @@ public class AddContactActivity extends AppCompatActivity {
     public void save(View v){
         if (firstName.getText().toString().length() == 0)
         {
-            printError("no first name input");
+            printError(getResources().getString(R.string.error));
             return;
         }
+
         if (id.length() == 0)
             datasource.createContact(firstName.getText().toString(),
                 secondName.getText().toString(),
@@ -91,6 +105,19 @@ public class AddContactActivity extends AppCompatActivity {
     }
     public void printError(String txt)
     {
-        Toast.makeText(this, "Error : " + txt, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, txt, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onResume() {
+        if (currentTime != null)
+            printError(currentTime.toString());
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        currentTime = Calendar.getInstance().getTime();
+        super.onPause();
     }
 }
