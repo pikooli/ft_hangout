@@ -1,8 +1,11 @@
 <p align="center" style="bold">FT_HANGOUT</p>
 <hr/>
 > Introduction : <br/>
+  
   >> Ft_hangout is the only android project of the school 42.<br/>
-  >> The project make us design a app, that allow to create contact and send text message.
+  
+  The project make us design a app, that allow to create contact and send text message.
+  
 > Restriction:<br/>
 >> This project have to been done with the help of Java or Kotlin language (i pick Java).
 >> You can add , edit or delete contact.
@@ -16,15 +19,6 @@
 >> The logo of the app is the 42 logo.
 >> When the app go in pause, it should save the current time and display it when it return.
 >> You cannot use external library.
-
-
-> I body him.
-
->> There's gonna come a point where you'll forget about what happened and you're gonna wanna come back at me.
-
->>> Don't get hit
-
->>>> SERIOUSLY, don't get hit.
 
 >>>>> These keep nesting at 20. I stopped checking after that point.
 <img src="ft_hangout.gif" width="220" height="400"/>
