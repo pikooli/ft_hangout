@@ -133,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void call(View v){
-        otherActivity = true;
         if (v.getTag().toString().length() == 0)
             print(getResources().getString(R.string.errorNumber));
         else{
@@ -148,11 +147,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             startActivity(intent);
-            otherActivity = true;
+       // otherActivity = true;
         }
 
     }
     public void sms(View v){
+        //otherActivity = true;
         if (v.getTag().toString().length() == 0)
             print(getResources().getString(R.string.errorNumber));
         else{
@@ -177,6 +177,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         datasource.open();
+        /*if (currentTime != null)
+            print(currentTime.toString());
+        currentTime = null;
+        otherActivity = false;*/
         setView();
         super.onResume();
     }
@@ -188,7 +192,6 @@ public class MainActivity extends AppCompatActivity {
             print(currentTime.toString());
         currentTime = null;
         otherActivity = false;
-
     }
 
     @Override
