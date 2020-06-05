@@ -28,8 +28,8 @@ What learn:
 >> How to make a phone call.
 >> How to use a emulator android (avd).
 
-Exemple of the application : 
-Creating contact and changing header color.
+Exemple of the application : <br/>
+Creating contact and changing header color.<br/>
 <img src="ft_hangout.gif" width="210" height="400"/>
-Making phone call and sending sms
+Making phone call and sending sms<br/>
 <img src="ft_hangout2.gif" width="420" height="400"/>
