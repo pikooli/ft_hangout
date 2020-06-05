@@ -17,6 +17,16 @@
 >> When the app go in pause, it should save the current time and display it when it return.
 >> You cannot use external library.
 
+
+> I body him.
+
+>> There's gonna come a point where you'll forget about what happened and you're gonna wanna come back at me.
+
+>>> Don't get hit
+
+>>>> SERIOUSLY, don't get hit.
+
+>>>>> These keep nesting at 20. I stopped checking after that point.
 <img src="ft_hangout.gif" width="220" height="400"/>
 
 <img src="ft_hangout2.gif" width="440" height="400"/>
