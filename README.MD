@@ -1,4 +1,4 @@
-<p align="center">**FT_HANGOUT**</p>
+<p align="center" style="bold">FT_HANGOUT</p>
 <hr/>
 > Introduction : <br/>
   >> Ft_hangout is the only android project of the school 42.<br/>
