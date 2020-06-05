@@ -33,4 +33,7 @@
     <string name="error">Pas de prenom</string>
     <string name="errorNumber">Pas de numero renseigner</string>
 
+    <string name="type">Message...</string>
+
+    <string name="send">Envoyer</string>
 </resources>

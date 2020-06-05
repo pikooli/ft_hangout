@@ -14,6 +14,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -146,7 +147,6 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
             }
-            print("call" + v.getTag().toString());
             startActivity(intent);
             otherActivity = true;
         }
@@ -155,8 +155,19 @@ public class MainActivity extends AppCompatActivity {
     public void sms(View v){
         if (v.getTag().toString().length() == 0)
             print(getResources().getString(R.string.errorNumber));
-        else
-            print("sms" + v.getTag().toString());
+        else{
+            if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.SEND_SMS)
+            != PackageManager.PERMISSION_GRANTED)
+            {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, 2);
+                if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.SEND_SMS)
+                        != PackageManager.PERMISSION_GRANTED)
+                    return ;
+            }
+            Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
+            sendIntent.setData(Uri.parse("smsto: 521-" + v.getTag().toString()));
+            startActivity(sendIntent);
+        }
     }
 
     public void pickPhoto(View v){

@@ -30,4 +30,8 @@
     <string name="cancel">Cancel</string>
     <string name="error">No firstname input</string>
     <string name="errorNumber">No number register</string>
+
+    <string name="type">Message...</string>
+    <string name="send">Send</string>
+
 </resources>
