@@ -1,9 +1,9 @@
 <p align="center">**FT_HANGOUT**</p>
 <hr/>
-Introduction : <br/>
+>Introduction : <br/>
   >>Ft_hangout is the only android project of the school 42.<br/>
   >>The project make us design a app, that allow to create contact and send text message.
-Restriction:<br/>
+>Restriction:<br/>
 >>This project have to been done with the help of Java or Kotlin language (i pick Java).
 >>You can add , edit or delete contact.
 >>Contact need to have at least 5 field of information.
