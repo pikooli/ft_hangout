@@ -32,4 +32,4 @@ Exemple of the application : <br/>
 Creating contact and changing header color.<br/>
 <img src="ft_hangout.gif" width="210" height="400"/><br/>
 Making phone call and sending sms<br/>
-<img src="ft_hangout2.gif" width="420" height="400"/>
+<img src="ft_hangout2.gif" width="440" height="400"/>
