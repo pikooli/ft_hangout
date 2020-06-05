@@ -24,7 +24,7 @@ What learn:
 
 >> How to hand the different element in android(layout, object, activity).<br/>
 >> Undestand the logic on own to build a app, how the app get compiled, the circle activity of a app.<br/>
->> How to play with the SQLite database, how to send receive sms.<br/>
+>> How to play with the SQLite database,store element in sharedpreferences, how to send receive sms.<br/>
 >> How to make a phone call.
 >> How to use a emulator android (avd).
 
