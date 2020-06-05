@@ -1,4 +1,4 @@
-                                    **FT_HANGOUT**
+<p align="center">**FT_HANGOUT**</p>
 <hr/>
 <img src="ft_hangout.gif" width="220" height="400"/>
 
