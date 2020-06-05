@@ -28,7 +28,7 @@ What learn:
 >> How to make a phone call.
 >> How to use a emulator android (avd).
 
-Exemple of the application : <br/>
+Test : <br/>
 Creating contact and changing header color.<br/>
 <img src="ft_hangout.gif" width="210" height="400"/><br/>
 Making phone call and sending sms<br/>
