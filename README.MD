@@ -2,8 +2,8 @@
 <hr/>
 Introduction : <br/>
   
-  >> Ft_hangout is the only android project of the school 42.<br/>
-  >>The project make us design a app, that allow to create contact and send text message.
+  >> Ft_hangout is the only android project of school 42.<br/>
+  >>The project make us design a app, that allow user to create contacts and send text message.
   
 Restriction:<br/>
 
@@ -20,6 +20,16 @@ Restriction:<br/>
 >> When the app go in pause, it should save the current time and display it when it return.<br/>
 >> You cannot use external library.<br/>
 
-<img src="ft_hangout.gif" width="220" height="400"/>
+What learn:
 
-<img src="ft_hangout2.gif" width="440" height="400"/>
+>> How to hand the different element in android(layout, object, activity).<br/>
+>> Undestand the logic on own to build a app, how the app get compiled , how to distribute the app on playstore, the circle activity of a app.<br/>
+>> How to play with the SQLite database, how to send receive sms.<br/>
+>> How to make a phone call.
+>> How to use a emulator android (avd).
+
+Exemple of the application : 
+Creating contact and changing header color.
+<img src="ft_hangout.gif" width="210" height="400"/>
+Making phone call and sending sms
+<img src="ft_hangout2.gif" width="420" height="400"/>
