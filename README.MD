@@ -33,3 +33,5 @@ Creating contact and changing header color.<br/>
 <img src="ft_hangout.gif" width="210" height="400"/><br/>
 Making phone call and sending sms<br/>
 <img src="ft_hangout2.gif" width="440" height="400"/>
+
+To try the application, launch a emulator and do "gradle InstallDebug". 
