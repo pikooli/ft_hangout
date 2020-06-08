@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +29,7 @@ public class AddContactActivity extends AppCompatActivity {
     private  EditText number;
     private  EditText email;
     private  EditText note;
+    private Button delete;
     private  String id;
     private Contact contact;
     private View header;
@@ -49,6 +51,7 @@ public class AddContactActivity extends AppCompatActivity {
         email = (EditText) findViewById(R.id.Email);
         note = (EditText) findViewById(R.id.Note);
         header = (TextView) findViewById(R.id.title);
+        delete = (Button) findViewById(R.id.delete);
         datasource = new ContactDatasource(this);
         mPreferences = getSharedPreferences(MYPREFERENCE, Context.MODE_PRIVATE);
         header.setBackgroundResource(mPreferences.getInt("color", R.color.white));
@@ -57,7 +60,10 @@ public class AddContactActivity extends AppCompatActivity {
         id = getIntent().getStringExtra("id");
         if (id.length() > 0)
             edit();
+        else
+            delete.setVisibility(View.GONE);
     }
+
     public void edit()
     {
         title.setText(R.string.edit_contact);
